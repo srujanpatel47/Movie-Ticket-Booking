@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	 version="3.1">
+<!--    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>-->
+    <servlet>
+        <servlet-name>index</servlet-name>
+        <servlet-class>loginModal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>index</servlet-name>
+        <url-pattern>/loginModal</url-pattern>
+    </servlet-mapping> 
+
+
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <servlet-class>signupModal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signupModal</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>loginAdmin</servlet-name>
+        <servlet-class>loginAdmin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>loginAdmin</servlet-name>
+        <url-pattern>/loginAdmin</url-pattern>
+    </servlet-mapping>
+
+     <servlet>
+        <servlet-name>addMovie</servlet-name>
+        <servlet-class>addMovie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addMovie</servlet-name>
+        <url-pattern>/addMovie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>deleteMovie</servlet-name>
+        <servlet-class>deleteMovie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteMovie</servlet-name>
+        <url-pattern>/deleteMovie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>bookMovie</servlet-name>
+        <servlet-class>bookMovie</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>bookMovie</servlet-name>
+        <url-pattern>/bookMovie</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
